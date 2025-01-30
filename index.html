@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Aashish Kumar</title>
+      <style>
+</style>
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+</div>
+<h2 align="center" Style= "background-color:gray;"font-size:10;px;line-height:0.5;"><marquee>GOVERNMENT ITI JAINAGAR</marquee> </h2>
+	<center><img src="iis.jpg" width="100%" height="8%"></center>
+
+     
+    
+       <align right><h2 align="center" Style= "font-size:10;px;line-height:0.5;">Latest Image</h2></align right>
+      <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+ <center> <img src="clg2.jpg" style="width:100%"></center>
+  <div class="text">Main gate of Institute</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="all.jpg" style="width:100%">
+  <div class="text">All Instructors Of Govt. iti Jainagar</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="certificate.jpg" style="width:100%">
+  <div class="text">Certificate</div>
+</div>
+ 
+ <div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="off.jpg" style="width:100%">
+  <div class="text">Principal Office</div>
+</div>
+ <div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="pheri.jpg" style="width:100%">
+  <div class="text">Prabhat Pheri</div>
+</div>
+
+ <div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="rep.jpg" style="width:100%">
+  <div class="text">institute campus</div>
+</div>
+ <div class="mySlides fade">
+  <div class="numbertext"> 7/ 7</div>
+  <img src="iticollage.jpg" style="width:100%">
+  <div class="text">ADMINISTRATIVE BLOCK</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+   <span class="dot" onclick="currentSlide(6)"></span> 
+    <span class="dot" onclick="currentSlide(7)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+ 
+        <h2 align="center" Style= "background-color:red;""font-size:02;px;line-height:0.5;">Welcome To Government ITI Jainagar</h2>
+       <h3 align="center"Style="background-color:gray;" font-size:12px;line-height:1.0;"><marquee>Government iti Jainagar Official Website. </marquee></h3>
+       <h4 align="center"Style= font-size:12px;line-height:1.0;"> This is a Government Industrial Training Institutes.
+ It is located in Jainagar Madhubani, Bihar. It has Six Trades. </h4>
+ 
+ 
+ <style type="text/css">
+h1{background-color:grey;}
+h2{background-color:white;}
+h3{background-color:red;}
+</style>
+</body>
+</html>
+         <p align="center"Style= font-size:10px;line-height:1.05;"> 
+Govt. ITI Jainagar is located at Village Sidhpa Jainagar, Madhubani 
+(Bihar), about 11km east of Ladania Block.. It is establised by
+ Govt. of Bihar during the academic year 2017-22. The College 
+is a Co-Educational Institute  and with fully equipped Labs.
+The college library has a good stock of books and journals 
+on various topics and titles.The college strives to promote
+ the students in a sense of responsibility for their own
+ development and an understanding of their obligations as
+ members of a democratic society. The college faster the 
+students in desire to learn, the ability to think rationally 
+and express themselves effectively, the habit of analytical 
+and reflective thought and an awareness of themselves their
+ heritage other cultures and their environment.Special classes 
+are taken to help the weak students and to improve spoken English 
+and communication skills. The teachers and the taught are encouraged 
+to take part in many seminars held at the Inter collegiate level. Placement
+ wing is available and 100% result is assured.The College is approved by 
+National Council for Vocational Training ( NCVT).</p>
+ <style type="text/css">
+body{background-image : url ("/college.jpg") }
+</style>
+</body>
+</html>
